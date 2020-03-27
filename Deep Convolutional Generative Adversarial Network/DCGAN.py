@@ -44,7 +44,7 @@ class Generator(nn.Module):
         x = self.convT3(x)
         x = F.relu(self.batch_norm3(x))
         x = self.convT4(x)
-        x = F.relu(x)
+        #x = F.relu(x)
         #x = F.relu(self.batch_norm4(x))
         #x = self.convT5(x)
         x = torch.tanh(x)
